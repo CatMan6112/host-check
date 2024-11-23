@@ -4,14 +4,15 @@
   <title>Check Host</title>
 </head>
 <body>
-<h1>Test complete, no piracy here!</h1> 
-  
   <script>
-    const allowedHosts = ["catman6112.github.io"]; // List of allowed hosts
+    const allowedHosts = ["cat-nitro.github.io"]; // List of allowed hosts
     const currentHost = window.location.hostname;
 
-    if (!allowedHosts.includes(currentHost)) {
-      // Redirect to YouTube meme if the host is unauthorized
+    if (allowedHosts.includes(currentHost)) {
+      // Redirect to the main allowed host
+      window.location.href = "https://cat-nitro.github.io";
+    } else {
+      // Redirect to the anti-skidding meme for unauthorized hosts
       window.location.href = "https://www.youtube.com/watch?v=zMBqPdMzZ9E";
     }
   </script>
