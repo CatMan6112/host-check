@@ -9,7 +9,8 @@
     const currentHost = window.location.hostname;
 
     if (!allowedHosts.includes(currentHost)) {
-      document.body.innerHTML = "<h1>This page is not hosted on an authorized site!</h1>";
+      // Redirect to YouTube meme if the host is unauthorized
+      window.location.href = "https://www.youtube.com/watch?v=zMBqPdMzZ9E";
     }
   </script>
 </body>
